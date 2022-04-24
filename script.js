@@ -1,4 +1,4 @@
-let countDate = new Date('june 7, 2022 00:00:00').getTime()
+let countDate = new Date('7 june, 2022 00:00:00').getTime()
 
 function newYear(){
     let now = new Date().getTime()
@@ -7,15 +7,14 @@ function newYear(){
     let second = 1000
     let minute = second * 60
     let hour = minute * 60
-    let day =  hour * 60
-    // let month = day * 0.032
+    let day =  hour * 24
+  
 
     let d =  Math.floor(gap/(day))
-    let h =  Math.floor(gap % (day)/ (hour))
+    let h =  Math.floor(gap % (day)/ (hour))    
     let m =  Math.floor(gap % (hour) / (minute))
     let s =  Math.floor(gap % (minute) / (second))
 
-    // document.getElementById('month').innerText=month
     document.getElementById('day').innerText = d
     document.getElementById('hour').innerText = h
     document.getElementById('minute').innerText = m
@@ -24,3 +23,4 @@ function newYear(){
 setInterval(function(){
     newYear();
 },1000)
+

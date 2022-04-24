@@ -26,25 +26,27 @@ h1{
     margin-top: -200px;
     font-size: 2rem;
     font-weight: 1;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
+    font-family: sans-serif;
 }
 h2{
     font-size: 100px;
     font-weight: 80px;
+    font-family: sans-serif;
     margin-top: 50px;    
     background-image: linear-gradient(90deg,#ff0000,#ffff00,#ff00f3,#0033ff,#ff00c4,#ff0000);
     background-size: 400%;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
-    animation: animate 1s linear infinite;
+    animation: animate 2s linear infinite;
 }
 @keyframes animate{
-    0%{
-        background-size: 0%;
+    100%{
+        background-size: 100%;
     }
-    /* 100%{
-        background-size: 0%;
-    } */
+    0%{
+        background-size: 10%;
+    }
 }
 .countdown{
     display: flex;
@@ -56,8 +58,8 @@ h2{
     height: 100px;
     line-height: 100px;
     text-align: center;
-    background: #EACC5A;
-    color: white;
+    background: linear-gradient(to right,yellow, white);
+    color: #ff00c4;
     margin: 0 15px;
     font-size: 3em;
     font-weight: 500;
@@ -70,7 +72,7 @@ h2{
     bottom: -30px;
     width: 100px;
     height: 40px;
-    background: white;
+    background: #ff00c4;
     color: black;
     font-size: 0.5em;
     line-height: 35px;
